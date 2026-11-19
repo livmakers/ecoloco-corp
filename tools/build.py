@@ -86,7 +86,7 @@ GHOST = {
 def page_hero(en, ja):
     g = GHOST.get(en)
     gh = f'<div class="ghost" aria-hidden="true"><img src="{g[0]}" alt="" style="{g[1]}" data-speed=".05"></div>' if g else ""
-    return f'<section class="ph-hero">{gh}<i class="wm tr" aria-hidden="true"></i><div class="wrap"><div class="big" data-hero data-split>{en}</div><h1 class="rv">{ja}</h1></div></section>'
+    return f'<section class="ph-hero">{gh}<i class="blob b1" aria-hidden="true"></i><i class="blob b2" aria-hidden="true"></i><i class="wm tr" aria-hidden="true"></i><div class="wrap"><div class="big" data-hero data-split>{en}</div><h1 class="rv">{ja}</h1></div></section>'
 
 def write(file, html):
     with open(os.path.join(ROOT, file), "w", encoding="utf-8", newline="\n") as f:
@@ -107,6 +107,7 @@ top = head("index.html", "ecoloco（エコロコ）｜株式会社ワイズフ�
 top += header("index.html") + f"""
 <section class="hero">
   <div class="bgtext" aria-hidden="true" data-speed="-.06">natural</div>
+  <i class="blob b1" aria-hidden="true"></i><i class="blob b2" aria-hidden="true"></i><i class="blob b3" aria-hidden="true"></i><i class="blob b4" aria-hidden="true"></i>
   <i class="wm tr" aria-hidden="true"></i><i class="wm flower bl" aria-hidden="true"></i>
   <div class="hero-in">
     <div class="copy">
@@ -167,7 +168,7 @@ top += header("index.html") + f"""
   </div>
 </section>
 
-<section class="sec paper">
+<section class="sec skyb">
   <div class="ghost" aria-hidden="true"><img src="assets/img/sj7.webp" alt="" style="left:-8%;top:-20%;width:46%;height:150%" data-speed="-.05"></div>
   <div class="wrap"><div class="split rev">
     <div class="tx" style="position:relative">

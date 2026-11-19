@@ -271,3 +271,72 @@ fieldset{border:0;padding:0;margin:0 0 26px}
 main p a:not(.btn):not(.tlink),.chk a{display:inline-block;padding:11px 3px;margin:-11px 0}
 
 h1,h2,.lead{text-wrap:balance}
+
+/* ===== COLOR UPDATE：ロゴの赤（実測 #c0001a 前後）＋ショップ写真に出てくる色を取り入れる ===== */
+:root{--red:#c4162a;--sun:#e2a93b;--sky:#6f9bb5;--pink:#ef9fa5;--terra:#d9794a;
+  --t-rose:#f8e3de;--t-sage:#e3ebdc;--t-sky:#dde9ef;--t-sun:#f8ecc8;--t-lav:#ebe3ef}
+.sec.tint{background:var(--t-rose);--cv:var(--t-rose)}
+.sec.paper{background:var(--t-sun);--cv:var(--t-sun)}
+.sec.sage{background:var(--t-sage);--cv:var(--t-sage)}
+.sec.skyb{background:var(--t-sky);--cv:var(--t-sky)}
+.en{color:var(--red)}
+.head .en::before{background:linear-gradient(90deg,var(--red),var(--sun))}
+.btn.fill,.hdr .btn.fill{background:var(--red);border-color:var(--red);color:#fff}
+.btn.fill::before{background:var(--green)}
+.btn{border-color:var(--red);color:var(--red)}.btn::before{background:var(--red)}
+.btn.fill:hover{color:#fff}
+.band .btn{border-color:#fff;color:#fff}
+.tlink::after{background:linear-gradient(90deg,var(--red),var(--sun),var(--sky))}
+.badge i{background:var(--red)}.badge:hover i{background:var(--green)}
+.idx{color:var(--red);opacity:.85}
+.sec.paper .idx,.skyb .idx{color:var(--sky)}
+.hero .mark .ch:nth-child(5){color:var(--red)}
+.hero .mark{background:none}
+.ph-hero .big{color:var(--green)}
+.ph-hero .big .ch:nth-child(3n){color:var(--red)}
+.ph-hero .bgtext,.hero .bgtext{-webkit-text-stroke-color:rgba(196,22,42,.22)}
+.marq{background:var(--t-sun);border-color:rgba(196,22,42,.25)}
+.marq span em{color:var(--red)}.marq span:nth-child(odd) em{color:var(--green)}
+.marq span{color:var(--green)}
+.row:nth-child(1) .n{color:var(--red)}.row:nth-child(2) .n{color:var(--sun)}.row:nth-child(3) .n{color:var(--sky)}
+.row .th{box-shadow:12px 12px 0 var(--pink)}.row:nth-child(2) .th{box-shadow:12px 12px 0 var(--sun)}.row:nth-child(3) .th{box-shadow:12px 12px 0 var(--sky)}
+.row .th.ir{overflow:visible}.row .th img{box-shadow:none}
+.words a:nth-child(1) span{color:var(--red)}.words a:nth-child(2) span{color:var(--sun)}.words a:nth-child(3) span{color:var(--sky)}.words a:nth-child(4) span{color:var(--green)}.words a:nth-child(5) span{color:var(--terra)}
+.words a:hover{color:var(--red)}
+.val:nth-of-type(5n+1) .no{-webkit-text-stroke-color:var(--red)}.val:nth-of-type(5n+2) .no{-webkit-text-stroke-color:var(--sun)}.val:nth-of-type(5n+3) .no{-webkit-text-stroke-color:var(--sky)}.val:nth-of-type(5n+4) .no{-webkit-text-stroke-color:var(--green)}.val:nth-of-type(5n) .no{-webkit-text-stroke-color:var(--terra)}
+.val .e{color:var(--red)}
+.bc .im.t{background:var(--t-rose)}.bc:nth-child(2) .im.t{background:var(--t-sky)}.bc:nth-child(3) .im.t{background:var(--t-sun)}.bc:nth-child(4) .im.t{background:var(--t-sage)}.bc:nth-child(5) .im.t{background:var(--t-lav)}.bc:nth-child(6) .im.t{background:var(--t-rose)}
+.bc .im .bn{color:var(--red)}.bc:nth-child(2) .im .bn{color:var(--sky)}.bc:nth-child(4) .im .bn{color:var(--green)}.bc:nth-child(5) .im .bn{color:var(--terra)}
+.bc .im{box-shadow:10px 10px 0 var(--pink)}.bc:nth-child(2) .im{box-shadow:10px 10px 0 var(--sky)}.bc:nth-child(3) .im{box-shadow:10px 10px 0 var(--sun)}.bc:nth-child(4) .im{box-shadow:10px 10px 0 var(--sage)}.bc:nth-child(5) .im{box-shadow:10px 10px 0 var(--terra)}.bc:nth-child(6) .im{box-shadow:10px 10px 0 var(--sky)}
+.bc .go{color:var(--red)}
+.acc .st{background:var(--red)}.acc:nth-of-type(3n+2) .st{background:var(--green)}.acc:nth-of-type(3n) .st{background:var(--sky)}
+.acc summary::after{border-color:var(--red);background:linear-gradient(var(--red),var(--red)) center/12px 1px no-repeat,linear-gradient(var(--red),var(--red)) center/1px 12px no-repeat}
+.acc dt{color:var(--red)}
+.tbl th{color:var(--red)}
+.band::before{background:linear-gradient(120deg,rgba(150,16,32,.78),rgba(11,93,59,.7))}
+.form{border-top:4px solid var(--red)}
+.req{color:var(--red)}
+.ftr::before{content:"";display:block;height:8px;position:absolute;left:0;right:0;top:0;background:linear-gradient(90deg,var(--red) 0 16.6%,var(--sun) 0 33.3%,var(--sky) 0 50%,var(--green) 0 66.6%,var(--pink) 0 83.3%,var(--terra) 0)}
+.ftr h4{color:var(--sun)}
+.ftr .big{-webkit-text-stroke-color:rgba(239,160,165,.5)}
+.drawer a.l:nth-child(odd){color:var(--green)}.drawer a.l:nth-child(even){color:var(--red)}
+.nav a:hover{color:var(--red)}.nav a::after{background:var(--red)}
+/* 背景のゆれるカラーの丸 */
+.blob{position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(1px);animation:flt 9s ease-in-out infinite}
+.blob.b1{width:clamp(180px,26vw,380px);aspect-ratio:1;background:var(--pink);opacity:.5;right:6%;top:12%}
+.blob.b2{width:clamp(120px,16vw,240px);aspect-ratio:1;background:var(--sun);opacity:.55;left:44%;bottom:6%;animation-delay:-3s}
+.blob.b3{width:clamp(90px,12vw,170px);aspect-ratio:1;background:var(--sky);opacity:.5;right:34%;top:16%;animation-delay:-6s}
+.blob.b4{width:clamp(70px,9vw,130px);aspect-ratio:1;background:var(--green);opacity:.25;left:4%;top:18%;animation-delay:-2s}
+@keyframes flt{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,-22px)}}
+.hero .copy{z-index:3}
+.fr.a{box-shadow:14px 14px 0 var(--sun),0 20px 50px rgba(63,52,45,.14)}
+.fr.b{box-shadow:-14px 14px 0 var(--pink),0 20px 50px rgba(63,52,45,.14)}
+.fr.c{box-shadow:12px 12px 0 var(--sky),0 20px 50px rgba(63,52,45,.14)}
+.ph-hero .blob.b1{right:12%;top:30%;width:clamp(120px,18vw,260px)}
+.ph-hero .blob.b2{left:auto;right:30%;bottom:8%;width:clamp(70px,9vw,130px)}
+.split .ph{box-shadow:16px 16px 0 var(--pink)}.split.rev .ph{box-shadow:-16px 16px 0 var(--sky)}
+.split .ph2{box-shadow:-12px -12px 0 var(--sun)}
+.split .ph.ir,.split .ph2.ir{overflow:visible}
+.ir{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.blob{animation:none}}
+.bc .im.fit{background:#fff}.bc .im.fit img{object-fit:contain}

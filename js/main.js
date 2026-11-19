@@ -51,7 +51,7 @@
     if ((el = $("#brands"))) {
       var limit = parseInt(el.getAttribute("data-limit") || "99", 10);
       el.innerHTML = (C.brands || []).slice(0, limit).map(function (b, i) {
-        var im = b.img ? "<div class='im'><img src='" + b.img + "' alt='" + esc(b.alt || b.name) + "' loading='lazy' width='600' height='800'></div>"
+        var im = b.img ? "<div class='im" + (b.fit ? " fit" : "") + "'><img src='" + b.img + "' alt='" + esc(b.alt || b.name) + "' loading='lazy' width='600' height='800'></div>"
           : "<div class='im t'><span class='bn'>" + esc(b.name) + "</span></div>";
         return "<a class='bc rv" + (i % 2 ? " alt" : "") + "' style='--d:" + (i % 4) * 0.1 + "s' data-shop='" + esc(b.linkKey) + "' href='#'>" + im +
           "<span class='no'>" + ("0" + (i + 1)).slice(-2) + "</span><h3>" + esc(b.name) + "</h3><p>" + esc(b.note || "商品の詳細は、楽天市場のショップページでご覧いただけます。") + "</p><span class='go'>楽天市場で見る</span></a>";
@@ -143,7 +143,7 @@
   /* 花びら（数枚だけ） */
   if (!reduce) for (var i = 0; i < 5; i++) {
     var p = document.createElement("i"); p.className = "petal"; p.setAttribute("aria-hidden", "true");
-    p.style.left = (8 + i * 21) + "%"; p.style.animationDelay = (i * 4) + "s"; p.style.animationDuration = (15 + i * 2) + "s"; document.body.appendChild(p);
+    p.style.left = (8 + i * 21) + "%"; p.style.background = ["#ef9fa5","#e2a93b","#c4162a","#6f9bb5","#e8c9c0"][i]; p.style.animationDelay = (i * 4) + "s"; p.style.animationDuration = (15 + i * 2) + "s"; document.body.appendChild(p);
   }
 
   $$("[data-cfg=email]").forEach(function (a) { a.href = "mailto:" + CFG.NOTIFY_EMAIL; });

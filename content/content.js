@@ -71,7 +71,7 @@ window.ECO_CONTENT = {
 
   /* ORIGINAL BRAND。説明文は確認済みの事実のみ。それ以外はショップでの紹介に誘導 */
   brands: [
-    { name: "earth_eco_loco", linkKey: "earth_eco_loco", img: "assets/img/c061-i1.webp", alt: "earth_eco_loco コットンシリーズの商品写真", note: "コットンシリーズ。" },
+    { name: "earth_eco_loco", linkKey: "earth_eco_loco", img: "assets/img/c061-i1.webp", fit: true, alt: "earth_eco_loco コットンシリーズの商品写真", note: "コットンシリーズ。" },
     { name: "SOCOCOTI", linkKey: "SOCOCOTI", img: "", note: "" },
     { name: "SO", linkKey: "SO", img: "assets/img/sj6.webp", alt: "編み機を扱う職人の手元",
       note: "福島生まれのこだわりニット。（WEAVING・KNITTING・SEWING IN JAPAN）" },
