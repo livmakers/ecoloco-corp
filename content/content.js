@@ -72,11 +72,11 @@ window.ECO_CONTENT = {
   /* ORIGINAL BRAND。説明文は確認済みの事実のみ。それ以外はショップでの紹介に誘導 */
   brands: [
     { name: "earth_eco_loco", linkKey: "earth_eco_loco", img: "assets/img/c061-i1.webp", fit: true, alt: "earth_eco_loco コットンシリーズの商品写真", note: "コットンシリーズ。" },
-    { name: "SOCOCOTI", linkKey: "SOCOCOTI", img: "", note: "" },
-    { name: "SO", linkKey: "SO", img: "assets/img/sj6.webp", alt: "編み機を扱う職人の手元",
+    { name: "SOCOCOTI", linkKey: "SOCOCOTI", img: "assets/img/sococoti-3.webp", fit: true, alt: "SOCOCOTIのメリノウールのトップスを着たモデル", note: "メリノウールなど、素材にこだわったアイテム。" },
+    { name: "SO", linkKey: "SO", img: "assets/img/sj6.webp", fit: false, alt: "編み機を扱う職人の手元",
       note: "福島生まれのこだわりニット。（WEAVING・KNITTING・SEWING IN JAPAN）" },
-    { name: "sel", linkKey: "sel", img: "", note: "" },
-    { name: "nachukara", linkKey: "nachukara", img: "", note: "" },
-    { name: "DOVERS", linkKey: "DOVERS", img: "", note: "" }
+    { name: "sel", linkKey: "sel", img: "assets/img/sel-1.webp", fit: true, alt: "selのチェック柄シャツを着たモデル", note: "" },
+    { name: "nachukara", linkKey: "nachukara", img: "assets/img/nachukara-1.webp", fit: true, alt: "nachukaraのキルティングコートを着たモデル", note: "" },
+    { name: "DOVERS", linkKey: "DOVERS", img: "assets/img/dovers-1.webp", fit: true, alt: "DOVERSのリバーシブルジャケットを着たモデル", note: "" }
   ]
 };

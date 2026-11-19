@@ -245,7 +245,7 @@ fieldset{border:0;padding:0;margin:0 0 26px}
 .sp{height:24px}
 
 @media (min-width:860px){
-  .nav{display:flex}.menu-btn{display:none}.hdr .btn{display:inline-flex}.drawer{display:none}
+  
   .hero-in{grid-template-columns:1fr 1.05fr;align-items:center;gap:0}
   .hero .mark{font-size:clamp(100px,14vw,230px);margin-right:-12vw}
   .stage{height:clamp(560px,50vw,760px)}
@@ -387,3 +387,52 @@ h1,h2,.lead{text-wrap:balance}
 /* ページ見出しの透かし写真も丸窓に */
 .ph-hero .ghost img{border-radius:999px 999px 0 0}
 @media (max-width:859px){.fr.a{outline-offset:8px}.split .ph2{display:none}}
+
+/* ===== Instagram banner ===== */
+:root{--ig:linear-gradient(115deg,#f9ce6c 0%,#f0803c 28%,#dc2f5a 55%,#b8209a 80%,#6a3fd1 100%)}
+.insta{position:relative;overflow:hidden;isolation:isolate;background:#241d1a;color:#fff;padding:clamp(72px,9vw,140px) 0}
+.insta::before{content:"";position:absolute;width:90vmax;aspect-ratio:1;left:50%;top:50%;translate:-50% -50%;z-index:-1;opacity:.5;filter:blur(60px);
+  background:conic-gradient(from 0deg,#f9ce6c,#f0803c,#dc2f5a,#b8209a,#6a3fd1,#f9ce6c);animation:spin 40s linear infinite;mask-image:radial-gradient(circle,transparent 25%,#000 26%,transparent 70%);-webkit-mask-image:radial-gradient(circle,transparent 25%,#000 26%,transparent 70%)}
+.insta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(36,29,26,.55),rgba(36,29,26,.82))}
+.insta .rail{position:absolute;left:0;right:0;top:18px;overflow:hidden;opacity:.5;pointer-events:none}
+.insta .rail div{display:flex;width:max-content;animation:mq 50s linear infinite}
+.insta .rail span{font-family:var(--f-disp);font-style:italic;font-weight:300;font-size:14px;letter-spacing:.4em;padding-right:2em;white-space:nowrap}
+.insta .wrap{display:grid;gap:56px;align-items:center}
+.insta .ico{width:64px;height:64px;display:block;margin-bottom:18px}
+.insta .kick{font-family:var(--f-disp);letter-spacing:.4em;text-transform:uppercase;font-size:13px;color:#f4d9c8;display:block;margin-bottom:10px}
+.insta h2{font-family:var(--f-disp);font-style:italic;font-weight:300;font-size:clamp(40px,7vw,96px);line-height:1.05;letter-spacing:.01em;margin-bottom:12px}
+.insta .handle{display:inline-block;font-family:var(--f-disp);font-weight:500;font-size:clamp(26px,4.2vw,54px);letter-spacing:.06em;background:var(--ig);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none;line-height:1.3;word-break:keep-all}
+.insta .handle:hover{color:transparent}
+.insta p.d{max-width:28em;color:#eadfd6;font-size:15px;margin:18px 0 30px}
+.ig-btn{position:relative;display:inline-flex;align-items:center;gap:14px;min-height:60px;padding:0 34px;border-radius:999px;color:#fff;text-decoration:none;font-weight:500;letter-spacing:.12em;font-size:16px;background:var(--ig);overflow:hidden;white-space:nowrap;box-shadow:0 14px 40px rgba(220,47,90,.35);transition:transform .5s var(--ease),box-shadow .5s}
+.ig-btn::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 38%,rgba(255,255,255,.55) 50%,transparent 62%);transform:translateX(-120%);animation:igshine 4.2s 1s ease-in-out infinite}
+@keyframes igshine{0%,45%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.ig-btn:hover{color:#fff;transform:translateY(-3px);box-shadow:0 20px 50px rgba(220,47,90,.5)}
+.ig-btn svg{width:22px;height:22px;flex:none}
+.tiles{position:relative;height:clamp(330px,70vw,520px)}
+.tile{position:absolute;width:42%;aspect-ratio:4/5;border-radius:22px;padding:2.5px;background:var(--ig);box-shadow:0 24px 60px rgba(0,0,0,.45);animation:igf 8s ease-in-out infinite}
+.tile img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.tile span{position:absolute;left:12px;bottom:12px;background:rgba(36,29,26,.72);backdrop-filter:blur(6px);border-radius:999px;font-size:11px;letter-spacing:.1em;padding:3px 12px;color:#fff}
+.tile.t1{left:2%;top:10%;rotate:-7deg}.tile.t2{left:29%;top:0;rotate:2deg;animation-delay:-3s;z-index:2}.tile.t3{right:0;top:22%;rotate:8deg;animation-delay:-5s}
+@keyframes igf{0%,100%{translate:0 0}50%{translate:0 -14px}}
+.ig-ic{width:44px;height:44px;border-radius:50%;display:none;place-items:center;background:var(--ig);color:#fff;transition:transform .5s var(--ease)}
+.ig-ic:hover{transform:rotate(-8deg) scale(1.08);color:#fff}.ig-ic svg{width:20px;height:20px}
+.ftr .ig-line{display:inline-flex;align-items:center;gap:10px}
+.ftr .ig-line i{width:30px;height:30px;border-radius:50%;background:var(--ig);display:grid;place-items:center}.ftr .ig-line svg{width:16px;height:16px}
+@media (min-width:860px){.ig-ic{display:grid}.insta .wrap{grid-template-columns:1.05fr 1fr}}
+@media (max-width:859px){.ig-btn{width:100%;justify-content:center;padding:0 20px;font-size:15px}.tiles{margin-top:10px}}
+@media (prefers-reduced-motion:reduce){.insta::before,.insta .rail div,.ig-btn::after,.tile{animation:none!important}}
+
+/* ===== 改行の調整 ===== */
+body{word-break:auto-phrase;line-break:strict}
+.btn,.tlink,.bc .go,.nav a,.drawer a.l,.ig-btn,.badge b{white-space:nowrap}
+h1,h2,h3,.lead,.note{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+.hero h1,.row h3,.val h3{word-break:keep-all;overflow-wrap:anywhere}
+
+@media (min-width:560px){.hdr .btn{display:inline-flex}}
+@media (min-width:1240px){.nav{display:flex}.menu-btn{display:none}.drawer{display:none}.ig-ic{display:grid}}
+@media (min-width:860px) and (max-width:1239px){.ig-ic{display:none}}
+
+.bc .im{aspect-ratio:1/1.12}
+.bc .im.fit img{object-fit:cover}

@@ -365,5 +365,68 @@
   "local": "assets/img/contents-13623289.webp",
   "status": "local",
   "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "sococoti-1",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p34/e7003-1a.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/e7003/",
+  "local": "assets/img/sococoti-1.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "sococoti-2",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p78/e7042-1.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/e7042/",
+  "local": "assets/img/sococoti-2.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "sococoti-3",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p66/e2667-1a.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/e2667/",
+  "local": "assets/img/sococoti-3.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "sel-1",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p102/51-1282-1.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/51-1282/",
+  "local": "assets/img/sel-1.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "sel-2",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p102/ckk5663-1.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/ckk5663/",
+  "local": "assets/img/sel-2.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "nachukara-1",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p101/nk550312-1.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/nk550312/",
+  "local": "assets/img/nachukara-1.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "dovers-1",
+  "usage": "ブランドカード画像",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/p102/ds362016-1.jpg",
+  "source_page": "https://item.rakuten.co.jp/auc-ecoloco/ds362016/",
+  "local": "assets/img/dovers-1.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
  }
 ]

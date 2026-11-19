@@ -6,7 +6,7 @@
 [pc] contact: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
 [pc] privacy: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
 [pc] thanks: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
-[sp] index: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] index: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=['@ecoloco_official:34'] エラー=0
 [sp] about: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
 [sp] work-style: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
 [sp] original-brand: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
@@ -24,6 +24,10 @@
 [form:recruit] ハニーポット入力時は送信されない: True
 [form:error] 通信失敗時の文言: 申し訳ありません、送信できませんでした。お手数ですが、時間をおいて再度お試しいただくか、メール（ecoloco-yaho
 内部リンク/アセット切れ: なし
+外部 200 https://item.rakuten.co.jp/auc-ecoloco/51-1282/
+外部 200 https://item.rakuten.co.jp/auc-ecoloco/ds362016/
+外部 200 https://item.rakuten.co.jp/auc-ecoloco/e2667/
+外部 200 https://item.rakuten.co.jp/auc-ecoloco/nk550312/
 外部 200 https://livmakers.github.io/ecoloco-corp/
 外部 200 https://livmakers.github.io/ecoloco-corp/about.html
 外部 200 https://livmakers.github.io/ecoloco-corp/contact.html
@@ -32,5 +36,6 @@
 外部 200 https://livmakers.github.io/ecoloco-corp/recruit.html
 外部 200 https://livmakers.github.io/ecoloco-corp/thanks.html
 外部 200 https://livmakers.github.io/ecoloco-corp/work-style.html
+外部 200 https://www.instagram.com/ecoloco_official/
 外部 200 https://www.rakuten.co.jp/auc-ecoloco/
 外部 200 https://www.rakuten.co.jp/auc-ecoloco/contents/26aw-sojp/

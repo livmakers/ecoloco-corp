@@ -146,6 +146,7 @@
     p.style.left = (8 + i * 21) + "%"; p.style.background = ["#ef9fa5","#e2a93b","#c4162a","#6f9bb5","#e8c9c0"][i]; p.style.animationDelay = (i * 4) + "s"; p.style.animationDuration = (15 + i * 2) + "s"; document.body.appendChild(p);
   }
 
+  $$("a[data-insta]").forEach(function (a) { if (CFG.INSTAGRAM_URL) a.href = CFG.INSTAGRAM_URL; });
   $$("[data-cfg=email]").forEach(function (a) { a.href = "mailto:" + CFG.NOTIFY_EMAIL; });
 
   splitText(); renderContent(); collectPx(); parallax();
