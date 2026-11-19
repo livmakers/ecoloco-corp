@@ -111,9 +111,10 @@ top += header("index.html") + f"""
   <i class="wm tr" aria-hidden="true"></i><i class="wm flower bl" aria-hidden="true"></i>
   <div class="hero-in">
     <div class="copy">
+      <p class="note rv" style="--d:1.4s">ちょっとたのしく、気持ちよく。</p>
       <div class="mark" data-hero data-split>ecoloco</div><span class="kana rv">エコロコ</span>
       <h1 data-hero data-split style="--d:.5s">みんなが待ってた、<br>ほんとうに使える欲しい服。</h1>
-      <p class="sub rv" style="--d:.9s">着心地がいい。ちょうどいい。ちょっとたのしく、気持ちよく。</p>
+      <p class="sub rv" style="--d:.9s">着心地がいい。ちょうどいい。大人のための、天然素材ナチュラル服。</p>
       <div class="rv" style="--d:1.1s;display:flex;flex-wrap:wrap;gap:22px;align-items:center">{SHOP_BTN.format(cls="lg")}<a class="tlink" href="about.html">About us</a></div>
       <span class="shop-note rv" style="--d:1.2s">楽天市場のショップページへ移動します</span>
       <a class="btn sm" data-yahoo href="#" hidden style="margin-top:12px">Yahoo!ショッピング</a>

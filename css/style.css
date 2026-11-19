@@ -340,3 +340,50 @@ h1,h2,.lead{text-wrap:balance}
 .ir{overflow:hidden}
 @media (prefers-reduced-motion:reduce){.blob{animation:none}}
 .bc .im.fit{background:#fff}.bc .im.fit img{object-fit:contain}
+
+/* ===== REFINE：彩度を落として上品に。アーチ型の窓・細い線のずらし枠・手書きのひとことで可愛さを残す ===== */
+:root{--red:#b5283a;--sun:#d4b06a;--sky:#8eaebd;--pink:#e9bcbc;--terra:#cf8a63;
+  --t-rose:#f8ece8;--t-sage:#eaf0e4;--t-sky:#e9f0f2;--t-sun:#f7f0df;--t-lav:#f0e9f1}
+.sec.tint{background:var(--t-rose);--cv:var(--t-rose)}.sec.paper{background:var(--t-sun);--cv:var(--t-sun)}.sec.skyb{background:var(--t-sky);--cv:var(--t-sky)}
+/* ずらし影 → 細い線のずらし枠 */
+.fr.a,.fr.b,.fr.c{box-shadow:0 18px 40px rgba(63,52,45,.1)}
+.fr.a{border-radius:999px 999px 6px 6px;outline:.5px solid var(--sun);outline-offset:12px}
+.fr.b{border-radius:26px;outline:.5px solid var(--red);outline-offset:10px}
+.fr.c{border-radius:50%;outline:.5px solid var(--sky);outline-offset:10px}
+.split .ph,.split.rev .ph{box-shadow:none;border-radius:999px 999px 8px 8px;outline:.5px solid var(--red);outline-offset:14px}
+.split.rev .ph{border-radius:8px 8px 999px 999px;outline-color:var(--sky)}
+.split .ph2{box-shadow:none;border-radius:50%;aspect-ratio:1;outline:.5px solid var(--sun);outline-offset:8px}
+.split .ph.ir,.split .ph2.ir{overflow:hidden}
+.row .th,.row:nth-child(2) .th,.row:nth-child(3) .th{box-shadow:none;border-radius:22px;outline:.5px solid var(--pink);outline-offset:9px}
+.row:nth-child(2) .th{outline-color:var(--sun)}.row:nth-child(3) .th{outline-color:var(--sky)}
+.row .th.ir{overflow:hidden}
+.bc .im,.bc:nth-child(n) .im{box-shadow:none;border-radius:999px 999px 10px 10px;outline:.5px solid var(--line);outline-offset:8px}
+.bc:nth-child(1) .im{outline-color:var(--pink)}.bc:nth-child(2) .im{outline-color:var(--sky)}.bc:nth-child(3) .im{outline-color:var(--sun)}.bc:nth-child(4) .im{outline-color:var(--sage)}.bc:nth-child(5) .im{outline-color:var(--terra)}.bc:nth-child(6) .im{outline-color:var(--sky)}
+.bc{gap:20px}.bc .no{margin-top:6px}
+.bc .im .bn{writing-mode:vertical-rl;font-size:clamp(30px,4vw,42px)}
+.bc .im.fit{background:#fff}
+/* やわらかい水彩の丸 */
+.blob{filter:blur(28px);animation-duration:14s}
+.blob.b1{opacity:.4}.blob.b2{opacity:.4}.blob.b3{opacity:.35}.blob.b4{opacity:.18}
+/* マーキーは静かに */
+.marq{background:transparent;border-color:var(--line);padding:18px 0}
+.marq span{color:var(--ink);font-weight:300}
+.marq span em{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--pink);vertical-align:middle;margin:0 34px;font-size:0;transform:translateY(-.1em)}
+.marq span em:nth-of-type(2){background:var(--sun)}.marq span em:nth-of-type(3){background:var(--sky)}.marq span em:nth-of-type(4){background:var(--red)}
+/* 手書きのひとこと */
+.note{font-family:var(--f-hand);color:var(--red);font-size:clamp(15px,1.6vw,19px);letter-spacing:.08em;display:inline-block;rotate:-3deg;position:relative;margin:0 0 10px;line-height:1.6}
+.note::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:6px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='6'%3E%3Cpath d='M0 3 Q7.5 0 15 3 T30 3 T45 3 T60 3' fill='none' stroke='%23b5283a' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;background-size:30px 6px}
+.hero .kana{margin-bottom:18px}
+/* 背景・帯・フッターを落ち着かせる */
+.band::before{background:linear-gradient(120deg,rgba(110,40,48,.66),rgba(24,70,52,.66))}
+.ftr::before{height:4px;opacity:.8}
+.ftr .big{-webkit-text-stroke-color:rgba(233,188,188,.4)}
+.words a:hover{color:var(--red)}
+.idx{opacity:.7}
+.head h2{font-weight:400}
+.btn.fill{box-shadow:0 6px 18px rgba(181,40,58,.18)}
+.badge i{box-shadow:0 8px 22px rgba(181,40,58,.25)}
+.form{border-top:1px solid var(--red)}
+/* ページ見出しの透かし写真も丸窓に */
+.ph-hero .ghost img{border-radius:999px 999px 0 0}
+@media (max-width:859px){.fr.a{outline-offset:8px}.split .ph2{display:none}}
