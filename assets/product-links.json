@@ -1,0 +1,15 @@
+{
+  "_readme": "購入導線の遷移先を一元管理。自社サイトに決済は作らず、すべて楽天市場ecolocoショップへ。キー=content/content.js の brands[].linkKey",
+  "shop": { "label": "楽天市場 ecolocoショップ", "url": "https://www.rakuten.co.jp/auc-ecoloco/", "status": "確認済み" },
+  "brands": {
+    "earth_eco_loco": { "url": "https://www.rakuten.co.jp/auc-ecoloco/", "status": "【要確認】ブランド別ページ未確認。ショップTOPへ" },
+    "SOCOCOTI":       { "url": "https://www.rakuten.co.jp/auc-ecoloco/", "status": "【要確認】ブランド別ページ未確認。ショップTOPへ" },
+    "SO":             { "url": "https://www.rakuten.co.jp/auc-ecoloco/contents/26aw-sojp/", "status": "【要確認】URL名称からSO特集と推定。リンク先の内容を目視確認" },
+    "sel":            { "url": "https://www.rakuten.co.jp/auc-ecoloco/", "status": "【要確認】ブランド別ページ未確認。ショップTOPへ" },
+    "nachukara":      { "url": "https://www.rakuten.co.jp/auc-ecoloco/", "status": "【要確認】ブランド別ページ未確認。ショップTOPへ" },
+    "DOVERS":         { "url": "https://www.rakuten.co.jp/auc-ecoloco/", "status": "【要確認】ブランド別ページ未確認。ショップTOPへ" }
+  },
+  "products": {
+    "e2632": { "url": "https://item.rakuten.co.jp/auc-ecoloco/e2632/", "status": "プロンプト記載例（商品名は未確認）" }
+  }
+}

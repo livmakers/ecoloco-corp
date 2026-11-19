@@ -1,0 +1,36 @@
+[pc] index: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] about: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] work-style: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] original-brand: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] recruit: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] contact: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] privacy: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[pc] thanks: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] index: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] about: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] work-style: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] original-brand: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] recruit: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] contact: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] privacy: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[sp] thanks: 横はみ出し=0px alt無し=0 高さ<44pxの操作要素=[] エラー=0
+[form:contact] 空送信→エラー表示: True
+[form:contact] 送信→サンクスページ遷移: http://localhost:8765/thanks.html?type=contact  / GASへのPOST内容キー: ['agree', 'body', 'company', 'email', 'kind', 'name', 'page', 'sentAt', 'tel', 'type']
+[form:contact] 連続送信制限メッセージ: 続けての送信はご遠慮いただいております。しばらくしてからお試
+[form:contact] ハニーポット入力時は送信されない: True
+[form:recruit] 空送信→エラー表示: True
+[form:recruit] 送信→サンクスページ遷移: http://localhost:8765/thanks.html?type=recruit  / GASへのPOST内容キー: ['agree', 'contact_method', 'email', 'employment', 'job', 'kana', 'kind', 'name', 'page', 'portfolio', 'pr', 'prefecture', 'sentAt', 'tel']
+[form:recruit] 連続送信制限メッセージ: 続けての送信はご遠慮いただいております。しばらくしてからお試
+[form:recruit] ハニーポット入力時は送信されない: True
+[form:error] 通信失敗時の文言: 申し訳ありません、送信できませんでした。お手数ですが、時間をおいて再度お試しいただくか、メール（ecoloco-yaho
+内部リンク/アセット切れ: なし
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/about.html
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/contact.html
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/original-brand.html
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/privacy.html
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/recruit.html
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/thanks.html
+外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/work-style.html
+外部 200 https://www.rakuten.co.jp/auc-ecoloco/
+外部 200 https://www.rakuten.co.jp/auc-ecoloco/contents/26aw-sojp/

@@ -1,0 +1,65 @@
+<!-- ===== ECOLOCO グループ参画バナー（ここから下をコピーして、各社HPの貼りたい場所に貼る。外部JS不要）=====
+     形は自動：幅720px以上＝横長4:1／それ未満＝スマホ2:1。正方形にしたい時は data-shape="square"、728×90の細長は "leader" -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<style>
+.eco-bn-wrap{container-type:inline-size;width:100%;max-width:1200px;margin:0 auto}
+.eco-bn{--green:#0b5d3b;--ink:#3f3a35;position:relative;display:block;aspect-ratio:4/1;overflow:hidden;border-radius:16px;text-decoration:none;color:var(--ink);background:#fbf7f1;box-shadow:0 6px 24px rgba(60,50,40,.14);transition:transform .6s cubic-bezier(.22,.61,.36,1),box-shadow .6s}
+.eco-bn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(60,50,40,.18)}
+.eco-bn:focus-visible{outline:3px solid #0b5d3b;outline-offset:3px}
+.eco-bn .ph{position:absolute;top:0;bottom:0;width:34%;background-size:cover;background-position:center top;opacity:.3;filter:saturate(.8);animation:ecoZoom 22s ease-in-out infinite alternate}
+.eco-bn .ph.a{left:0;background-image:url({{PH_A}});-webkit-mask-image:linear-gradient(90deg,#000 15%,transparent);mask-image:linear-gradient(90deg,#000 15%,transparent)}
+.eco-bn .ph.b{right:0;background-image:url({{PH_B}});-webkit-mask-image:linear-gradient(270deg,#000 15%,transparent);mask-image:linear-gradient(270deg,#000 15%,transparent);animation-delay:-8s}
+.eco-bn .leaf{position:absolute;opacity:.13;pointer-events:none;width:15%;transform-origin:50% 100%;animation:ecoSway 8s ease-in-out infinite}
+.eco-bn .l1{left:30%;top:-8%}.eco-bn .l2{right:30%;bottom:-12%;animation-direction:reverse}
+.eco-bn .petal{position:absolute;width:9px;height:13px;background:#e9b9b0;border-radius:80% 0 80% 0;opacity:0;animation:ecoFall 10s linear infinite}
+.eco-bn .p1{left:36%}.eco-bn .p2{left:52%;animation-delay:4s}.eco-bn .p3{left:64%;animation-delay:7s}
+.eco-bn .in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1.1cqw;padding:0 8%}
+.eco-bn .logo{width:min(40cqw,480px);height:auto;animation:ecoRise 1.2s ease both}
+.eco-bn .cat{font-family:"Zen Old Mincho","Yu Mincho",serif;font-weight:500;font-size:clamp(12px,2.4cqw,29px);letter-spacing:.16em;color:var(--green);animation:ecoRise 1.2s .25s ease both}
+.eco-bn .pill{font-family:"Zen Old Mincho","Yu Mincho",serif;font-weight:700;font-size:clamp(11px,1.9cqw,23px);letter-spacing:.1em;color:#fff;background:var(--green);padding:.55em 1.6em;border-radius:999px;animation:ecoRise 1.2s .5s ease both}
+.eco-bn::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 42%,rgba(255,255,255,.6) 50%,transparent 58%);transform:translateX(-100%);animation:ecoShine 7s 2s ease-in-out infinite;pointer-events:none}
+@keyframes ecoRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes ecoSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes ecoZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+@keyframes ecoFall{0%{top:-10%;opacity:0}10%{opacity:.8}90%{opacity:.6}100%{top:110%;opacity:0;transform:rotate(240deg)}}
+@keyframes ecoShine{0%,55%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+@media (prefers-reduced-motion:reduce){.eco-bn,.eco-bn *,.eco-bn::after{animation:none!important;transition:none!important}.eco-bn .petal{display:none}.eco-bn::after{display:none}}
+/* スマホ幅（2:1） */
+@container (max-width:719px){
+  .eco-bn{aspect-ratio:2/1;border-radius:14px}
+  .eco-bn .ph.b,.eco-bn .l2{display:none}
+  .eco-bn .ph.a{width:100%;opacity:.16;-webkit-mask-image:none;mask-image:none}
+  .eco-bn .in{padding:0 4%;gap:2.2cqw}
+  .eco-bn .logo{width:58cqw}.eco-bn .cat{font-size:3.9cqw}
+  .eco-bn .pill{font-size:3.3cqw;padding:.5em 1.2em;letter-spacing:.06em}
+}
+/* 正方形（1:1）data-shape="square" */
+.eco-bn-wrap[data-shape=square] .eco-bn{aspect-ratio:1/1}
+.eco-bn-wrap[data-shape=square] .ph.b,.eco-bn-wrap[data-shape=square] .l2{display:none}
+.eco-bn-wrap[data-shape=square] .ph.a{width:100%;opacity:.16;-webkit-mask-image:none;mask-image:none}
+.eco-bn-wrap[data-shape=square] .in{padding:0 7%;gap:4.5cqw}
+.eco-bn-wrap[data-shape=square] .logo{width:80cqw}
+.eco-bn-wrap[data-shape=square] .cat{font-size:4.2cqw;letter-spacing:.1em}
+.eco-bn-wrap[data-shape=square] .pill{font-size:4.1cqw;padding:.7em 1.3em;border-radius:22px;line-height:1.6;letter-spacing:.06em;text-wrap:balance}
+/* 細長（8:1／728×90想定）data-shape="leader" */
+.eco-bn-wrap[data-shape=leader] .eco-bn{aspect-ratio:728/90;border-radius:10px}
+.eco-bn-wrap[data-shape=leader] .ph.b,.eco-bn-wrap[data-shape=leader] .l1,.eco-bn-wrap[data-shape=leader] .l2,.eco-bn-wrap[data-shape=leader] .cat{display:none}
+.eco-bn-wrap[data-shape=leader] .ph.a{width:100%;opacity:.14;-webkit-mask-image:none;mask-image:none}
+.eco-bn-wrap[data-shape=leader] .in{flex-direction:row;justify-content:space-between;gap:2cqw;padding:0 2.5%}
+.eco-bn-wrap[data-shape=leader] .logo{width:auto;height:84%}
+.eco-bn-wrap[data-shape=leader] .pill{font-size:2.15cqw;padding:.5em 1.4em;letter-spacing:.06em;white-space:nowrap}
+</style>
+<div class="eco-bn-wrap" data-shape="{{SHAPE}}">
+<a class="eco-bn" href="{{URL}}" target="_blank" rel="noopener" aria-label="ECOLOCOは私たちのグループ会社になりました">
+<div class="ph a" role="presentation"></div><div class="ph b" role="presentation"></div>
+<svg class="leaf l1" viewBox="0 0 200 300" fill="none" stroke="#0b5d3b" stroke-width="1.2" aria-hidden="true"><path d="M100 295C100 200 100 120 100 10M100 250C60 230 35 200 30 160M100 250c40-20 65-50 70-90M100 200C65 185 45 160 42 125M100 200c35-15 55-40 58-75M100 150C75 138 60 118 58 90M100 150c25-12 40-30 42-58"/></svg>
+<svg class="leaf l2" viewBox="0 0 200 300" fill="none" stroke="#0b5d3b" stroke-width="1.2" aria-hidden="true"><path d="M100 295C100 200 100 120 100 10M100 250C60 230 35 200 30 160M100 250c40-20 65-50 70-90M100 200C65 185 45 160 42 125M100 200c35-15 55-40 58-75M100 150C75 138 60 118 58 90M100 150c25-12 40-30 42-58"/></svg>
+<i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i>
+<div class="in">
+<img class="logo" alt="ecoloco エコロコ" src="{{LOGO}}" width="700" height="225">
+<div class="cat">大人のための、天然素材ナチュラル服</div>
+<div class="pill">ECOLOCOは私たちのグループ会社になりました</div>
+</div></a>
+</div>
+<!-- ===== ここまで ===== -->

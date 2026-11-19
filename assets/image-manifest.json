@@ -1,0 +1,126 @@
+[
+ {
+  "id": "logo",
+  "usage": "ロゴ",
+  "source_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-ecoloco/logo/logo1.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/logo.webp",
+  "status": "local",
+  "person_in_photo": "なし"
+ },
+ {
+  "id": "shoptop",
+  "usage": "ヒーロー候補（ショップTOP）",
+  "source_url": "https://shop.r10s.jp/auc-ecoloco/cabinet/top/common/shoptop-pc.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/shoptop.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "banner-ot2",
+  "usage": "バナー",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/img/261101-ot2-sp.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/banner-ot2.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "banner-cp5",
+  "usage": "バナー",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/img/261118-cp5-sp.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/banner-cp5.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "tp-0918",
+  "usage": "特集",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/img/260918-tp1.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/tp-0918.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "tp-1104",
+  "usage": "特集",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/img/261104-tp1.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/tp-1104.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "contents-1113",
+  "usage": "コンテンツ",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/contents/261113/contentstop.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/contents-1113.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "contents-1104",
+  "usage": "コンテンツ",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/contents/261104/contentstop.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/contents-1104.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "contents-1023",
+  "usage": "コンテンツ",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/contents/261023/contentstop.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/contents-1023.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "item-e2023",
+  "usage": "商品",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/p78/e2023-1.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/item-e2023.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "item-e3343",
+  "usage": "商品",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/p100/e3343-1.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/item-e3343.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "item-e3298",
+  "usage": "商品",
+  "source_url": "https://tshop.r10s.jp/auc-ecoloco/cabinet/p93/e3298-1.jpg",
+  "source_page": "https://www.rakuten.co.jp/auc-ecoloco/",
+  "local": "assets/img/item-e3298.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】肖像権・クレジット確認前"
+ },
+ {
+  "id": "bn-photo0",
+  "usage": "バナー叩き台内の写真(左)",
+  "source_url": "ecoloco_group_banner.html に埋込",
+  "local": "assets/img/bn-photo0.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】"
+ },
+ {
+  "id": "bn-photo1",
+  "usage": "バナー叩き台内の写真(右)",
+  "source_url": "ecoloco_group_banner.html に埋込",
+  "local": "assets/img/bn-photo1.webp",
+  "status": "local",
+  "person_in_photo": "【要確認】"
+ }
+]
