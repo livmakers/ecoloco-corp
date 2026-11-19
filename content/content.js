@@ -13,15 +13,15 @@ window.ECO_CONTENT = {
   ],
 
   values: [
-    { no: "01", title: "職人的マインド", en: "Craftsmanship",
+    { no: "01", img: "assets/img/sj6.webp", alt: "編み機を扱う職人の手元", title: "職人的マインド", en: "Craftsmanship",
       body: "「良い仕事がしたい」「良いアウトプットを出して、もっと上質な価値を提供したい」という気持ちを持つ方と、一緒に仕事をしたいと考えています。ときには目の前のことに「どこまでこだわれるか」を自分に問いながら、職人のような姿勢で仕事に向き合ってくださる方が、私たちの仲間になってくれたら嬉しいです。" },
-    { no: "02", title: "バランス感覚", en: "Balance",
+    { no: "02", img: "assets/img/m15.webp", alt: "袖を広げて着こなしを見せるモデル", title: "バランス感覚", en: "Balance",
       body: "「お客さまと自社」という「2対1」で物事を判断するのではなく、お客さまも自社も、そしてスタッフも嬉しい、Win-Winの関係をつくるための発想ができる方を求めています。" },
-    { no: "03", title: "「そもそも」を考える", en: "Why, first",
+    { no: "03", img: "assets/img/m10.webp", alt: "ネイビーのベストを着たモデル", title: "「そもそも」を考える", en: "Why, first",
       body: "手段が目的になってしまうことは、仕事ではよくあります。「そもそも何のためにやるのだろう？」と、仕事の目的から立ち止まって考えられる方と働きたいと思っています。目的が見えていれば、いまの方法よりもっと良いやり方に気づけるはずです。" },
-    { no: "04", title: "チームワーク", en: "Teamwork",
+    { no: "04", img: "assets/img/m6.webp", alt: "白いトップスのモデル", title: "チームワーク", en: "Teamwork",
       body: "私たちの考える良いチームワークは、それぞれが役割をもった人の集まりだからこそ成り立つものです。同じ方向を向いて一緒にものを創っていく仲間がいると、安心と信頼が生まれます。そこから生まれるアイデアや発想は、きっと深みのある、意味のある結果につながります。" },
-    { no: "05", title: "生産性", en: "Productivity",
+    { no: "05", img: "assets/img/m9.webp", alt: "後ろ姿を見せるモデル", title: "生産性", en: "Productivity",
       body: "生産性というと、仕事にかける時間を短くすることを思い浮かべるかもしれません。私たちが大切にしているのは、変わり続ける状況に柔軟に対応して、仕事のやり方をアップデートできることです。必要なときに、必要なことを見きわめて、仕事をシンプルに組み立てていける方を待っています。" }
   ],
 
@@ -71,9 +71,9 @@ window.ECO_CONTENT = {
 
   /* ORIGINAL BRAND。説明文は確認済みの事実のみ。それ以外はショップでの紹介に誘導 */
   brands: [
-    { name: "earth_eco_loco", linkKey: "earth_eco_loco", img: "", note: "" },
+    { name: "earth_eco_loco", linkKey: "earth_eco_loco", img: "assets/img/c061-i1.webp", alt: "earth_eco_loco コットンシリーズの商品写真", note: "コットンシリーズ。" },
     { name: "SOCOCOTI", linkKey: "SOCOCOTI", img: "", note: "" },
-    { name: "SO", linkKey: "SO", img: "assets/img/contents-1104.webp", alt: "ミシンで縫製中のニット。『福島生まれのこだわりニット SO』",
+    { name: "SO", linkKey: "SO", img: "assets/img/sj6.webp", alt: "編み機を扱う職人の手元",
       note: "福島生まれのこだわりニット。（WEAVING・KNITTING・SEWING IN JAPAN）" },
     { name: "sel", linkKey: "sel", img: "", note: "" },
     { name: "nachukara", linkKey: "nachukara", img: "", note: "" },

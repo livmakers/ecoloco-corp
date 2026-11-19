@@ -24,13 +24,13 @@
 [form:recruit] ハニーポット入力時は送信されない: True
 [form:error] 通信失敗時の文言: 申し訳ありません、送信できませんでした。お手数ですが、時間をおいて再度お試しいただくか、メール（ecoloco-yaho
 内部リンク/アセット切れ: なし
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/about.html
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/contact.html
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/original-brand.html
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/privacy.html
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/recruit.html
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/thanks.html
-外部 NG(<urlopen error [Errno 11001] getaddrinfo failed>) https://ecoloco-corp.example/work-style.html
+外部 200 https://livmakers.github.io/ecoloco-corp/
+外部 200 https://livmakers.github.io/ecoloco-corp/about.html
+外部 200 https://livmakers.github.io/ecoloco-corp/contact.html
+外部 200 https://livmakers.github.io/ecoloco-corp/original-brand.html
+外部 200 https://livmakers.github.io/ecoloco-corp/privacy.html
+外部 200 https://livmakers.github.io/ecoloco-corp/recruit.html
+外部 200 https://livmakers.github.io/ecoloco-corp/thanks.html
+外部 200 https://livmakers.github.io/ecoloco-corp/work-style.html
 外部 200 https://www.rakuten.co.jp/auc-ecoloco/
 外部 200 https://www.rakuten.co.jp/auc-ecoloco/contents/26aw-sojp/
