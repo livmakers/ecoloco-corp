@@ -4,7 +4,7 @@ window.ECO_CONFIG = {
   RAKUTEN_SHOP_URL: "https://www.rakuten.co.jp/auc-ecoloco/",
   YAHOO_SHOP_URL: "",            // Yahoo!ショッピングのURLが確認できたら入れる（空なら非表示）
   ECOLOCO_URL: "https://livmakers.github.io/ecoloco-corp/", // 【要確認】公開後のHPのURL（バナーのリンク先）
-  INSTAGRAM_URL: "https://www.instagram.com/ecoloco_official/", // 公式Instagram（ecoloco_official）
+  INSTAGRAM_URL: "https://www.instagram.com/ecoloco.official/", // 公式Instagram（ecoloco.official）
   NOTIFY_EMAIL: "ecoloco-yahoo@ysfree.jp",       // 通知先（GAS側 Code.gs の NOTIFY_EMAIL と同じ値に）
   GAS_ENDPOINT: "",              // 【要設定】Google Apps Script のウェブアプリURL（docs/gas-setup.md 参照）
   MIN_FILL_SECONDS: 4,           // 迷惑対策：表示から送信までの最短秒数
