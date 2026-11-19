@@ -251,7 +251,7 @@ ab += header("about.html") + page_hero("ABOUT US", "私たちについて") + f"
 <section class="sec"><div class="narrow">
   {sec_head("Company", "会社概要")}
   <table class="tbl rv"><tbody id="company-table"></tbody></table>
-  <noscript><p>会社名：株式会社ワイズフリー／所在地：〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F／電話：06-6281-0800（平日10:00〜13:00）</p></noscript>
+  <noscript><p>会社名：株式会社ワイズフリー／所在地：〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F</p></noscript>
 </div></section>
 <section class="sec tint"><i class="wm tl" aria-hidden="true"></i><div class="narrow">
   {sec_head("Access", "アクセス")}
