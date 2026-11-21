@@ -12,7 +12,7 @@ window.ECO_CONTENT = {
   ],
 
   values: [
-    { no: "01", img: "assets/img/sj6.webp", alt: "編み機を扱う職人の手元", title: "職人的マインド", en: "Craftsmanship",
+    { no: "01", img: "assets/img/m3.webp", alt: "ナチュラル素材のカットソーの質感", title: "職人的マインド", en: "Craftsmanship",
       body: "「良い仕事がしたい」「良いアウトプットを出して、もっと上質な価値を提供したい」という気持ちを持つ方と、一緒に仕事をしたいと考えています。ときには目の前のことに「どこまでこだわれるか」を自分に問いながら、職人のような姿勢で仕事に向き合ってくださる方が、私たちの仲間になってくれたら嬉しいです。" },
     { no: "02", img: "assets/img/m15.webp", alt: "袖を広げて着こなしを見せるモデル", title: "バランス感覚", en: "Balance",
       body: "「お客さまと自社」という「2対1」で物事を判断するのではなく、お客さまも自社も、そしてスタッフも嬉しい、Win-Winの関係をつくるための発想ができる方を求めています。" },
@@ -72,8 +72,8 @@ window.ECO_CONTENT = {
   brands: [
     { name: "earth_eco_loco", linkKey: "earth_eco_loco", img: "assets/img/c061-i1.webp", fit: true, alt: "earth_eco_loco コットンシリーズの商品写真", note: "コットンシリーズ。" },
     { name: "SOCOCOTI", linkKey: "SOCOCOTI", img: "assets/img/sococoti-3.webp", fit: true, alt: "SOCOCOTIのメリノウールのトップスを着たモデル", note: "メリノウールなど、素材にこだわったアイテム。" },
-    { name: "SO", linkKey: "SO", img: "assets/img/sj6.webp", fit: false, alt: "編み機を扱う職人の手元",
-      note: "福島生まれのこだわりニット。（WEAVING・KNITTING・SEWING IN JAPAN）" },
+    { name: "SO", linkKey: "SO", img: "", fit: false, alt: "",
+      note: "素材にこだわったニット。" },
     { name: "sel", linkKey: "sel", img: "assets/img/sel-1.webp", fit: true, alt: "selのチェック柄シャツを着たモデル", note: "" },
     { name: "nachukara", linkKey: "nachukara", img: "assets/img/nachukara-1.webp", fit: true, alt: "nachukaraのキルティングコートを着たモデル", note: "" },
     { name: "DOVERS", linkKey: "DOVERS", img: "assets/img/dovers-1.webp", fit: true, alt: "DOVERSのリバーシブルジャケットを着たモデル", note: "" }

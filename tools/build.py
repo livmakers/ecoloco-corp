@@ -79,7 +79,7 @@ def sec_head(en, ja, c=False):
 # 下層ページの見出し：大きな欧文＋透かし写真（楽天ショップの画像）
 GHOST = {
     "ABOUT US": ("assets/img/contents-260918-2.webp", "right:-8%;top:-10%;width:62%;height:120%"),
-    "WORK STYLE": ("assets/img/sj7.webp", "right:-4%;top:-20%;width:44%;height:150%"),
+    "WORK STYLE": ("assets/img/m7.webp", "right:-4%;top:-20%;width:44%;height:150%"),
     "ORIGINAL BRAND": ("assets/img/m12.webp", "right:-6%;top:-10%;width:48%;height:130%"),
     "RECRUIT": ("assets/img/m16.webp", "right:-6%;top:-10%;width:50%;height:130%"),
     "CONTACT": ("assets/img/m13.webp", "right:-6%;top:-10%;width:46%;height:130%"),
@@ -139,7 +139,7 @@ top += header("index.html") + f"""
   <i class="wm tl" aria-hidden="true"></i>
   <div class="wrap"><div class="split">
     <div class="pw"><div class="ph ir"><img src="assets/img/m11.webp" alt="グリーンのカーディガンを着たモデル" loading="lazy" width="700" height="780" data-speed=".03"></div>
-    <div class="ph2 ir" style="--d:.3s"><img src="assets/img/sj5.webp" alt="縫製工場のミシンとスレッド" loading="lazy" width="1000" height="1350"></div></div>
+    <div class="ph2 ir" style="--d:.3s"><img src="assets/img/e2632-10.webp" alt="ナチュラル素材のトップスを着たモデル" loading="lazy" width="700" height="840"></div></div>
     <div class="tx">
       <span class="idx rv" aria-hidden="true">01</span>
       <div class="head" style="margin-top:12px"><span class="en rv">About ecoloco</span><h2 data-split>天然素材で、<br>毎日をととのえる。</h2></div>
@@ -191,7 +191,7 @@ top += header("index.html") + f"""
 </section>
 
 <section class="sec skyb">
-  <div class="ghost" aria-hidden="true"><img src="assets/img/sj7.webp" alt="" style="left:-8%;top:-20%;width:46%;height:150%" data-speed="-.05"></div>
+  <div class="ghost" aria-hidden="true"><img src="assets/img/m7.webp" alt="" style="left:-8%;top:-20%;width:46%;height:150%" data-speed="-.05"></div>
   <div class="wrap"><div class="split rev">
     <div class="tx" style="position:relative">
       <span class="idx rv" aria-hidden="true">02</span>
@@ -242,7 +242,7 @@ ab += header("about.html") + page_hero("ABOUT US", "私たちについて") + f"
   </div></div>
 </section>
 <section class="sec tint">
-  <div class="ghost" aria-hidden="true"><img src="assets/img/sj8.webp" alt="" style="right:-6%;top:-20%;width:40%;height:150%" data-speed=".05"></div>
+  <div class="ghost" aria-hidden="true"><img src="assets/img/m9.webp" alt="" style="right:-6%;top:-20%;width:40%;height:150%" data-speed=".05"></div>
   <div class="narrow">
   {sec_head("Business", "事業内容")}
   <ul class="rv" style="padding-left:1.2em"><li>レディースファッション（リネン・コットン等ナチュラル素材中心）のEC運営</li><li>オリジナルブランドの企画<br><span style="font-size:14px;color:var(--ink-soft)">earth_eco_loco／SOCOCOTI／SO／sel／nachukara／DOVERS ほか</span></li></ul>

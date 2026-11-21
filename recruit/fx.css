@@ -61,3 +61,27 @@
   .curtain{display:none}
   [data-split] .ch{opacity:1;transform:none}
 }
+
+/* ===== HERO 改訂：RECRUITを大きく／文字と写真を重ねない ===== */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center;padding:110px max(24px,calc((100vw - 1240px)/2)) 120px}
+.hero-tx{max-width:none;margin:0;padding:0}
+.hero-ph{position:relative;inset:auto;width:100%;height:min(640px,72vh);order:2}
+.hero-ph .p1{width:62%;right:0;top:0;aspect-ratio:3/4}
+.hero-ph .p2{width:44%;left:0;right:auto;top:38%;aspect-ratio:3/4}
+.hero-ph .p3{width:34%;right:4%;top:auto;bottom:0;aspect-ratio:1}
+.hero-ph .badge,.hero-ph .badge-c{left:30%;top:4%;bottom:auto;right:auto;width:130px;height:130px;transform:none}
+.hero-label{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-weight:700;font-size:14px;letter-spacing:.08em;margin:0 0 4px;color:var(--ink)}
+.hero-label span{background:var(--wine);color:#fff;padding:4px 14px;border-radius:999px;font-size:15px;letter-spacing:.2em}
+.hero-big{font:italic 500 clamp(80px,12.5vw,170px)/.95 var(--en);color:var(--green);letter-spacing:.02em;margin:6px 0 8px;opacity:0;transform:translateY(24px);animation:up 1s 1.35s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-hiring{display:inline-block;font-size:clamp(16px,2vw,20px);font-weight:700;background:linear-gradient(transparent 62%,#efd6c9 62%);margin:0 0 18px;opacity:0;animation:up .9s 1.45s forwards}
+.hero-hiring b{color:var(--wine)}
+.hero h1{font-size:clamp(30px,4.2vw,54px);margin:0 0 20px}
+.marquee{bottom:10px}
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr;gap:28px;padding:96px 20px 90px;min-height:auto}
+  .hero-ph{order:2;height:auto;aspect-ratio:1/0.95;margin:0}
+  .hero-ph .p3{display:block}
+  .hero-ph .badge,.hero-ph .badge-c{left:40%;top:-6%;width:104px;height:104px}
+  .hero-ph .badge-c{transform:scale(.72)}
+}
+@media (prefers-reduced-motion:reduce){.hero-big,.hero-hiring{opacity:1;transform:none}}
