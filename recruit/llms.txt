@@ -16,10 +16,10 @@
 - 雇用形態・給与：経験・希望をふまえ面接で決定。詳細な労働条件は内定前に書面で明示
 
 ## リンク
-- 採用サイト: https://livmakers.github.io/ecoloco-corp/recruit/
-- 募集職種: https://livmakers.github.io/ecoloco-corp/recruit/#positions
-- 応募フォーム: https://livmakers.github.io/ecoloco-corp/recruit/#entry
-- コーポレートサイト: https://livmakers.github.io/ecoloco-corp/
-- プライバシーポリシー: https://livmakers.github.io/ecoloco-corp/privacy.html
+- 採用サイト: https://ysfree.co.jp/recruit/
+- 募集職種: https://ysfree.co.jp/recruit/#positions
+- 応募フォーム: https://ysfree.co.jp/recruit/#entry
+- コーポレートサイト: https://ysfree.co.jp/
+- プライバシーポリシー: https://ysfree.co.jp/privacy.html
 - オンラインショップ（楽天市場）: https://www.rakuten.co.jp/auc-ecoloco/
 - オンラインショップ（Yahoo!ショッピング）: https://store.shopping.yahoo.co.jp/ecoloco/

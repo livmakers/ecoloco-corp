@@ -3,7 +3,7 @@
 公開に必要なのは生成後の静的ファイルのみ。文言の差し替えは content/content.js を直接編集すればOK。"""
 import os, json
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://livmakers.github.io/ecoloco-corp"  # 【要確認】独自ドメインにする場合は置換（sitemap/OGP/canonical）
+SITE = "https://ysfree.co.jp"  # 【要確認】独自ドメインにする場合は置換（sitemap/OGP/canonical）
 FONTS = "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Klee+One&family=Shippori+Mincho:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
 NAV = [("index.html", "TOP"), ("about.html", "ABOUT US"), ("work-style.html", "WORK STYLE"), ("recruit.html", "RECRUIT"), ("original-brand.html", "ORIGINAL BRAND"), ("contact.html", "CONTACT")]
 

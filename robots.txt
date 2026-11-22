@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thanks.html
 
-Sitemap: https://livmakers.github.io/ecoloco-corp/sitemap.xml
+Sitemap: https://ysfree.co.jp/sitemap.xml
