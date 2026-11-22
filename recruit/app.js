@@ -4,13 +4,7 @@
 (function () {
   "use strict";
 
-  /* ===== 送信先 =====
-     FORM_KEY：FormSubmit有効化メールに記載されるランダム文字列。
-     未設定の間は、分割したアドレスを実行時に組み立てて使う（ソースにそのまま書かない） */
-  var FORM_KEY = "";
-  var A = ["satou", "nobuhiro", "bhd"], D = ["gmail", "com"];
-  var target = FORM_KEY || (A.join(".") + "@" + D.join("."));
-  var ENDPOINT = "https://formsubmit.co/ajax/" + target;
+  /* 送信処理は ../js/ecosend.js（本番=PHP／テスト=FormSubmit を自動切替） */
 
   /* ===== 募集職種 ===== */
   var JOBS = [
@@ -177,10 +171,9 @@
       "送信日時": new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" })
     };
     btn.disabled = true; btn.textContent = "送信中…";
-    fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) })
-      .then(function (r) { return r.json(); })
-      .then(function (j) {
-        if (!j || String(j.success) !== "true") throw new Error((j && j.message) || "error");
+    var subj = data["_subject"]; delete data["_subject"]; delete data["_template"]; delete data["_captcha"];
+    window.ecoSend(isApply() ? "recruit" : "question", subj, data)
+      .then(function () {
         try { localStorage.setItem("ecr_last", Date.now()); } catch (x) {}
         form.hidden = true; var d = $("#done"); d.hidden = false; d.focus(); d.scrollIntoView({ block: "center", behavior: "smooth" });
       })

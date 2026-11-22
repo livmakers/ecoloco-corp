@@ -43,14 +43,8 @@
     btn.disabled = true; btn.textContent = "送信中…";
 
     function done() { try { localStorage.setItem(KEY, Date.now()); } catch (x) {} location.href = "thanks.html?type=" + kind; }
-    // FormSubmit（無料・継続課金なし）経由でメール送信。宛先は config.js の FORM_KEY（未設定時は分割アドレスを実行時に組み立て）
-    var A = ["satou", "nobuhiro", "bhd"], D = ["gmail", "com"];
-    var target = CFG.FORM_KEY || (A.join(".") + "\u0040" + D.join("."));
-    var payload = { "_subject": "【ecolocoコーポレートサイト】" + (kind === "recruit" ? "採用応募" : "お問い合わせ") + "（" + (data.name || "") + " 様）", "_template": "table", "_captcha": "false" };
-    Object.keys(data).forEach(function (k) { payload[k] = data[k]; });
-    fetch("https://formsubmit.co/ajax/" + target, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(payload) })
-      .then(function (r) { return r.json(); })
-      .then(function (j) { if (j && String(j.success) === "true") done(); else throw new Error((j && j.message) || "error"); })
+    var subj = "【ecolocoコーポレートサイト】" + (kind === "recruit" ? "採用応募" : "お問い合わせ") + "（" + (data.name || "") + " 様）";
+    window.ecoSend(kind, subj, data).then(done)
       .catch(function () {
         btn.disabled = false; btn.textContent = "送信する";
         show("申し訳ありません、送信できませんでした。通信環境をご確認のうえ、時間をおいて再度お試しください。", true);

@@ -324,7 +324,7 @@ rc += header("recruit.html") + page_hero("RECRUIT", "採用情報") + f"""
     <button class="btn fill lg" type="submit">送信する</button>
   </form>
 </div></section>
-""" + FOOTER % '<script src="js/forms.js"></script>'
+""" + FOOTER % '<script src="js/ecosend.js"></script><script src="js/forms.js"></script>'
 write("recruit.html", rc)
 
 # ---------------- CONTACT ----------------
@@ -347,7 +347,7 @@ ct += header("contact.html") + page_hero("CONTACT", "お問い合わせ") + """
     <button class="btn fill lg" type="submit">送信する</button>
   </form>
 </div></section>
-""" + FOOTER % '<script src="js/forms.js"></script>'
+""" + FOOTER % '<script src="js/ecosend.js"></script><script src="js/forms.js"></script>'
 write("contact.html", ct)
 
 # ---------------- PRIVACY ----------------

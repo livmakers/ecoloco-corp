@@ -1,0 +1,8 @@
+# フォーム用フォルダ：send.php と token.php 以外は外から開けない
+Require all denied
+<FilesMatch "^(send|token)\.php$">
+  Require all granted
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header always set Cache-Control "no-store"
+</IfModule>
