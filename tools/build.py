@@ -59,7 +59,7 @@ FOOTER = """</main>
 <footer class="ftr"><div class="wrap">
   <div class="big" aria-hidden="true">ecoloco</div>
   <div class="g">
-  <div><p style="font-size:13px;margin:0 0 18px">株式会社ワイズフリー<br>〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F<br>TEL 06-6281-0800（平日 10:00〜13:00）</p>
+  <div><p style="font-size:13px;margin:0 0 18px">株式会社ワイズフリー<br>〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F</p>
   <a class="btn" data-shop="shop" href="https://www.rakuten.co.jp/auc-ecoloco/" target="_blank" rel="noopener">ONLINE SHOP（楽天市場）</a>
   <span class="shop-note" style="color:#b8ad9d">楽天市場のショップページへ移動します</span>
   <a class="btn sm" data-yahoo href="#" hidden style="margin-top:10px">Yahoo!ショッピング</a></div>
@@ -95,7 +95,7 @@ def write(file, html):
         f.write(html)
 
 ORG = {"@context": "https://schema.org", "@type": "Organization", "name": "株式会社ワイズフリー", "alternateName": "ecoloco",
-       "url": SITE + "/", "telephone": "+81-6-6281-0800", "email": "ecoloco-yahoo@ysfree.jp",
+       "url": SITE + "/", "email": "ecoloco-yahoo@ysfree.jp",
        "address": {"@type": "PostalAddress", "postalCode": "541-0056", "addressRegion": "大阪府", "addressLocality": "大阪市中央区", "streetAddress": "久太郎町3丁目5番5号 丸忠第一ビル5F", "addressCountry": "JP"}}
 ORG_LD = '<script type="application/ld+json">' + json.dumps(ORG, ensure_ascii=False) + "</script>"
 
@@ -300,7 +300,7 @@ rc += header("recruit.html") + page_hero("RECRUIT", "採用情報") + f"""
 <section class="sec tint" id="jobs-sec"><div class="narrow">
   {sec_head("POSITIONS", "募集職種")}
   <div id="jobs"></div>
-  <noscript><p>募集職種：カメラマン／スタイリスト／モデル／カスタマーサービス／デザイナー／ライター／コーダー／Webディレクター。詳細はお問い合わせください（06-6281-0800・ecoloco-yahoo@ysfree.jp）。</p></noscript>
+  <noscript><p>募集職種：カメラマン／スタイリスト／モデル／カスタマーサービス／デザイナー／ライター／コーダー／Webディレクター。応募は採用専門サイトのフォームからお願いします。</p></noscript>
   <p style="font-size:13px;color:var(--ink-soft)">給与：勤務条件・経験によります。お問い合わせください。</p>
 </div></section>
 <section class="sec" id="apply"><i class="wm tr" aria-hidden="true"></i><div class="narrow">
@@ -324,7 +324,7 @@ rc += header("recruit.html") + page_hero("RECRUIT", "採用情報") + f"""
     <button class="btn fill lg" type="submit">送信する</button>
   </form>
 </div></section>
-""" + FOOTER % '<script src="js/forms.js"></script><script src="js/jobposting.js"></script>'
+""" + FOOTER % '<script src="js/forms.js"></script>'
 write("recruit.html", rc)
 
 # ---------------- CONTACT ----------------
@@ -332,7 +332,6 @@ ct = head("contact.html", "CONTACT｜お問い合わせ｜ecoloco（株式会社
 ct += header("contact.html") + page_hero("CONTACT", "お問い合わせ") + """
 <section class="sec" style="padding-top:20px"><i class="wm br" aria-hidden="true"></i><div class="narrow">
   <p class="rv">お取引・メディア掲載・その他のご相談を承っています。内容を確認のうえ、担当者よりご連絡いたします。<br>商品のご注文・配送などに関するお問い合わせは、ご購入された<a href="https://www.rakuten.co.jp/auc-ecoloco/" data-shop="shop" target="_blank" rel="noopener">楽天市場のショップページ</a>からお願いいたします。</p>
-  <p class="rv" style="font-size:14px;color:var(--ink-soft)">お電話：06-6281-0800（平日 10:00〜13:00）</p>
   <p class="rv" style="font-size:14px;color:var(--ink-soft)">採用に関するお問い合わせは <a href="recruit.html#apply">RECRUIT の応募フォーム</a> からお願いします。</p>
   <div class="sp"></div>
   <form class="form rv" data-form="contact" novalidate>
@@ -354,18 +353,20 @@ write("contact.html", ct)
 # ---------------- PRIVACY ----------------
 pv = head("privacy.html", "プライバシーポリシー｜ecoloco（株式会社ワイズフリー）", "株式会社ワイズフリー（ecoloco）の個人情報の取扱いについて。")
 pv += header("privacy.html") + page_hero("PRIVACY POLICY", "プライバシーポリシー") + """
-<!-- 【要法務確認】以下は雛形です。公開前に必ず法務・顧問などの確認を受けてください。 -->
 <section class="sec" style="padding-top:20px"><div class="narrow prose">
-  <p>株式会社ワイズフリー（以下「当社」）は、当サイトでお預かりする個人情報を、以下の方針に従って適切に取り扱います。</p>
-  <h2>1. 取得する情報</h2><p>お問い合わせ・採用応募フォームを通じて、お名前、ふりがな、会社名、メールアドレス、電話番号、お住まいの都道府県、ポートフォリオURL、お問い合わせ内容・自己PR等をご入力いただく場合があります。</p>
-  <h2>2. 利用目的</h2><ul><li>お問い合わせへの回答・ご連絡のため</li><li>採用選考に関するご連絡・選考のため</li><li>取引に関するご連絡のため</li></ul>
-  <h2>3. 第三者提供</h2><p>法令に基づく場合を除き、ご本人の同意なく第三者に個人情報を提供しません。</p>
-  <h2>4. 業務委託・外部サービスの利用</h2><p>フォームの受信・記録・自動返信には、Google LLC が提供するサービス（Google Apps Script、Google スプレッドシート、Gmail）を利用します。【要法務確認】海外への情報移転に関する表記</p>
-  <h2>5. 安全管理</h2><p>個人情報への不正アクセス、紛失、漏えい等を防ぐため、必要かつ適切な安全管理措置を講じます。</p>
-  <h2>6. 保存期間</h2><p>【要法務確認】利用目的の達成に必要な期間保存し、不要となった情報は適切に削除します。</p>
-  <h2>7. 開示・訂正・利用停止等のご請求</h2><p>ご本人からの開示・訂正・利用停止等のご請求は、下記の窓口までご連絡ください。</p>
-  <h2>8. お問い合わせ窓口</h2><p>株式会社ワイズフリー<br>〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F<br>電話：06-6281-0800（平日 10:00〜13:00）<br>メール：<a data-cfg="email" href="mailto:ecoloco-yahoo@ysfree.jp">ecoloco-yahoo@ysfree.jp</a></p>
-  <p style="color:var(--ink-soft);font-size:13px">【要確認】制定日・改定日を記載してください。</p>
+  <p>株式会社ワイズフリー（以下「当社」）は、当社のウェブサイト（コーポレートサイトおよび採用サイト。以下「当サイト」）でお預かりする個人情報を、個人情報の保護に関する法律その他の関係法令を守り、以下の方針に従って適切に取り扱います。</p>
+  <h2>1. 事業者</h2><p>株式会社ワイズフリー<br>〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F</p>
+  <h2>2. 取得する情報</h2><p>お問い合わせフォーム・採用応募フォームを通じて、お名前、ふりがな、会社名、メールアドレス、電話番号、年齢、お住まいの都道府県、希望職種・働き方、経験・実績、ポートフォリオ等のURL、お問い合わせ内容・自己PR等をご入力いただく場合があります。</p>
+  <h2>3. 利用目的</h2><ul><li>お問い合わせへの回答・ご連絡のため</li><li>採用選考の実施、選考結果のご連絡、入社手続きのため</li><li>お取引に関するご連絡のため</li></ul><p>上記の目的以外には利用しません。</p>
+  <h2>4. 第三者提供</h2><p>法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。</p>
+  <h2>5. 外部サービスの利用（委託・外国にある第三者）</h2><p>フォームの送信内容は、FormSubmit（米国の事業者が提供するフォーム送信サービス）を経由し、Google LLC（米国）の Gmail で受信します。これらの事業者は外国（米国）にあります。米国には日本の個人情報保護法に相当する包括的な連邦法はなく、州法等により個人情報が保護されています。当社は、利用目的の達成に必要な範囲で、これらのサービスを利用します。</p><p>また当サイトは、文字の表示に Google Fonts（Google LLC）を利用しています。表示の際、閲覧者のIPアドレス等が同社に送信されます。</p>
+  <h2>6. Cookie・閲覧情報</h2><p>当サイトでは、連続送信などの迷惑行為を防ぐため、ブラウザの保存機能（ローカルストレージ）に送信時刻のみを保存します。アクセス解析ツールや広告用のCookieは使用していません。</p>
+  <h2>7. 安全管理</h2><p>個人情報への不正アクセス、紛失、漏えい等を防ぐため、通信の暗号化（HTTPS）、閲覧できる担当者の限定など、必要かつ適切な安全管理措置を講じます。</p>
+  <h2>8. 保存期間</h2><p>お問い合わせの情報は対応完了後、採用応募の情報は選考終了後、それぞれ利用目的の達成に必要な期間が過ぎたときに削除します。採用に至らなかった方の応募情報は、選考終了から原則6か月以内に削除します。</p>
+  <h2>9. 開示・訂正・利用停止等のご請求</h2><p>ご本人から、保有個人データの利用目的の通知、開示、訂正・追加・削除、利用停止・消去、第三者提供の停止のご請求があった場合は、ご本人であることを確認のうえ、法令に従って遅滞なく対応します。下記の窓口までメールでご連絡ください。</p>
+  <h2>10. お問い合わせ窓口</h2><p>株式会社ワイズフリー 個人情報お問い合わせ窓口<br>〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F<br>メール：<a data-cfg="email" href="mailto:ecoloco-yahoo@ysfree.jp">ecoloco-yahoo@ysfree.jp</a></p>
+  <h2>11. 改定</h2><p>本方針は、法令の改正等に応じて改定することがあります。改定後の内容は当サイトに掲載した時点から効力を生じます。</p>
+  <p style="color:var(--ink-soft);font-size:13px">制定日：2026年11月22日</p>
 </div></section>
 """ + FOOTER % ""
 write("privacy.html", pv)
@@ -383,7 +384,7 @@ th += header("") + """
 write("thanks.html", th)
 
 # sitemap / robots
-urls = ["", "about.html", "work-style.html", "original-brand.html", "recruit.html", "contact.html", "privacy.html"]
-write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{SITE}/{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+urls = ["", "about.html", "work-style.html", "original-brand.html", "recruit.html", "recruit/", "contact.html", "privacy.html"]
+write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{SITE}/{u}</loc><lastmod>2026-11-22</lastmod></url>\n" for u in urls) + "</urlset>\n")
 write("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /thanks.html\n\nSitemap: {SITE}/sitemap.xml\n")
 print("built")

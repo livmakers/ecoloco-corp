@@ -1,4 +1,4 @@
-/* フォーム送信：Google Apps Script（無料）へ送信 → スプレッドシート記録＋メール通知＋自動返信
+/* フォーム送信：FormSubmit（無料）経由でメール通知
    迷惑対策：ハニーポット／表示から最短秒数／連続送信の間隔制限 */
 (function () {
   var CFG = window.ECO_CONFIG || {};
@@ -43,17 +43,17 @@
     btn.disabled = true; btn.textContent = "送信中…";
 
     function done() { try { localStorage.setItem(KEY, Date.now()); } catch (x) {} location.href = "thanks.html?type=" + kind; }
-    if (!CFG.GAS_ENDPOINT) { /* 未設定時：ローカル確認用。実際には送信されません */
-      try { localStorage.setItem("eco_last_payload", JSON.stringify(data)); } catch (x) {}
-      console.info("[ECOLOCO] GAS_ENDPOINT未設定のため送信していません（テストモード）", data); done(); return;
-    }
-    // text/plain で送るとCORSプリフライトが不要（GASの標準的な受け方）
-    fetch(CFG.GAS_ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(data), redirect: "follow" })
+    // FormSubmit（無料・継続課金なし）経由でメール送信。宛先は config.js の FORM_KEY（未設定時は分割アドレスを実行時に組み立て）
+    var A = ["satou", "nobuhiro", "bhd"], D = ["gmail", "com"];
+    var target = CFG.FORM_KEY || (A.join(".") + "\u0040" + D.join("."));
+    var payload = { "_subject": "【ecolocoコーポレートサイト】" + (kind === "recruit" ? "採用応募" : "お問い合わせ") + "（" + (data.name || "") + " 様）", "_template": "table", "_captcha": "false" };
+    Object.keys(data).forEach(function (k) { payload[k] = data[k]; });
+    fetch("https://formsubmit.co/ajax/" + target, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(payload) })
       .then(function (r) { return r.json(); })
-      .then(function (j) { if (j && j.ok) done(); else throw new Error((j && j.error) || "error"); })
+      .then(function (j) { if (j && String(j.success) === "true") done(); else throw new Error((j && j.message) || "error"); })
       .catch(function () {
         btn.disabled = false; btn.textContent = "送信する";
-        show("申し訳ありません、送信できませんでした。お手数ですが、時間をおいて再度お試しいただくか、メール（" + (CFG.NOTIFY_EMAIL || "") + "）またはお電話（06-6281-0800／平日10:00〜13:00）でご連絡ください。", true);
+        show("申し訳ありません、送信できませんでした。通信環境をご確認のうえ、時間をおいて再度お試しください。", true);
       });
   });
 })();

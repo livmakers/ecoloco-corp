@@ -1,0 +1,19 @@
+# ecoloco（株式会社ワイズフリー）
+
+> 株式会社ワイズフリー（大阪府大阪市中央区）が運営する、リネン・コットンなど天然素材を中心とした大人の女性のためのナチュラル服ブランド「ecoloco（エコロコ）」の公式コーポレートサイト。楽天市場などのECモールで販売し、オリジナルブランド（earth_eco_loco、SOCOCOTI、SO、sel、nachukara、DOVERS ほか）を企画している。
+
+## 主なページ
+- トップ: https://livmakers.github.io/ecoloco-corp/
+- 会社概要: https://livmakers.github.io/ecoloco-corp/about.html
+- 働き方・求める人物像: https://livmakers.github.io/ecoloco-corp/work-style.html
+- オリジナルブランド: https://livmakers.github.io/ecoloco-corp/original-brand.html
+- 採用サイト（募集職種・応募フォーム）: https://livmakers.github.io/ecoloco-corp/recruit/
+- お問い合わせ（フォームのみ）: https://livmakers.github.io/ecoloco-corp/contact.html
+- プライバシーポリシー: https://livmakers.github.io/ecoloco-corp/privacy.html
+
+## 会社情報
+- 会社名：株式会社ワイズフリー
+- ブランド：ecoloco（エコロコ）
+- 所在地：〒541-0056 大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F
+- オンラインショップ：https://www.rakuten.co.jp/auc-ecoloco/
+- Instagram：https://www.instagram.com/ecoloco.official/

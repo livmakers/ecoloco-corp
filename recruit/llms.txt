@@ -1,0 +1,24 @@
+# ecoloco 採用サイト（株式会社ワイズフリー）
+
+> ナチュラル素材のレディースファッションブランド「ecoloco（エコロコ）」を運営する株式会社ワイズフリー（大阪市中央区）の採用専門サイト。EC・MD・SNS・ブランド開発の経験者と、経験不問でやる気のある方を募集しています。応募・問い合わせはサイト内のフォームのみで受け付けています（電話受付なし）。
+
+## 募集職種
+- ECモール運用（経験者）：楽天市場などモール店舗の運営・イベント販促・モール広告・数値改善
+- 自社サイト運用（経験者）：自社ECの運営、CRM、SEO・Web広告・LP改善
+- ECアパレルMD（経験者）：商品構成・販売計画、仕入れ数量・在庫コントロール
+- SNS運用（経験者）：公式Instagram等の企画・撮影・投稿・分析
+- ブランド構築・商品開発（経験者）：オリジナルブランドのコンセプト設計、新商品企画
+- 経験不問・やる気枠（未経験OK）：アシスタントからスタートし領域を拡大
+
+## 募集要項（共通）
+- 就業場所：大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F
+- 就業時間：9:30〜18:30の間（職種・雇用形態により異なる）
+- 雇用形態・給与：経験・希望をふまえ面接で決定。詳細な労働条件は内定前に書面で明示
+
+## リンク
+- 採用サイト: https://livmakers.github.io/ecoloco-corp/recruit/
+- 募集職種: https://livmakers.github.io/ecoloco-corp/recruit/#positions
+- 応募フォーム: https://livmakers.github.io/ecoloco-corp/recruit/#entry
+- コーポレートサイト: https://livmakers.github.io/ecoloco-corp/
+- プライバシーポリシー: https://livmakers.github.io/ecoloco-corp/privacy.html
+- オンラインショップ（楽天市場）: https://www.rakuten.co.jp/auc-ecoloco/

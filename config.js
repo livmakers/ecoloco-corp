@@ -6,7 +6,7 @@ window.ECO_CONFIG = {
   ECOLOCO_URL: "https://livmakers.github.io/ecoloco-corp/", // 【要確認】公開後のHPのURL（バナーのリンク先）
   INSTAGRAM_URL: "https://www.instagram.com/ecoloco.official/", // 公式Instagram（ecoloco.official）
   NOTIFY_EMAIL: "ecoloco-yahoo@ysfree.jp",       // 通知先（GAS側 Code.gs の NOTIFY_EMAIL と同じ値に）
-  GAS_ENDPOINT: "",              // 【要設定】Google Apps Script のウェブアプリURL（docs/gas-setup.md 参照）
+  FORM_KEY: "",                  // FormSubmit有効化後のランダム文字列（入れるとメールアドレスがページから消える）
   MIN_FILL_SECONDS: 4,           // 迷惑対策：表示から送信までの最短秒数
   SUBMIT_INTERVAL_SECONDS: 60    // 迷惑対策：連続送信の間隔
 };
