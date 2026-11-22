@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Xサーバー本番用の納品フォルダとzipを作る。
-使い方: python3 tools/make_xserver.py ドメイン名   例) python3 tools/make_xserver.py ecoloco.jp
+使い方: ECO_MAIL_TO=届け先アドレス python3 tools/make_xserver.py ドメイン名   例) ECO_MAIL_TO=xxx@gmail.com python3 tools/make_xserver.py ecoloco.jp
 ・サイト内のURL（canonical / OGP / 構造化データ / sitemap / robots / llms.txt）を本番ドメインに一括置換
 ・PHPフォーム（form/）と .htaccess を同梱
 ・開発用ファイル（tools, docs, gas, banner など）は含めない"""
@@ -11,6 +11,8 @@ if len(sys.argv) < 2 or not re.fullmatch(r"[a-z0-9.-]+\.[a-z]{2,}", sys.argv[1].
     sys.exit("ドメイン名を指定してください 例) python3 tools/make_xserver.py ecoloco.jp")
 DOMAIN = sys.argv[1].lower().removeprefix("www.")
 NEW = f"https://{DOMAIN}/"
+TO = os.environ.get("ECO_MAIL_TO", "")
+if not re.fullmatch(r"[^@\s]+@[^@\s]+\.[a-z]{2,}", TO): sys.exit("環境変数 ECO_MAIL_TO に届け先メールアドレスを指定してください")
 OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, "dist")
 SITE = os.path.join(OUT, "public_html")
 INCLUDE = ["index.html", "about.html", "work-style.html", "original-brand.html", "recruit.html", "contact.html",
@@ -32,7 +34,7 @@ for d, _, fs in os.walk(SITE):
         p = os.path.join(d, f)
         if not (f.endswith(TEXT) or f == ".htaccess"): continue
         s = open(p, encoding="utf-8").read()
-        t = s.replace(OLD, NEW).replace("__DOMAIN__", DOMAIN)
+        t = s.replace(OLD, NEW).replace("__DOMAIN__", DOMAIN).replace("__TO__", TO)
         if f == "config.js": t = re.sub(r'ECOLOCO_URL: "[^"]*"', f'ECOLOCO_URL: "{NEW}"', t)
         if t != s: open(p, "w", encoding="utf-8").write(t); n += 1
 left = [os.path.join(d, f) for d, _, fs in os.walk(SITE) for f in fs if f.endswith(TEXT) and OLD in open(os.path.join(d, f), encoding="utf-8").read()]
