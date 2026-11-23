@@ -212,3 +212,4 @@ textarea{resize:vertical}
   .rv,.hero h1 span,.hero .lead,.hero-cta,.tags{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+.jbtns{display:flex;gap:10px;flex-wrap:wrap}

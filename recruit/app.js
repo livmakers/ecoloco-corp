@@ -56,7 +56,7 @@
       "<dt>歓迎</dt><dd>" + li(j.want) + "</dd>" +
       "<dt>雇用形態・給与</dt><dd>ご経験・スキル・ご希望の働き方をふまえ、面接でご相談のうえ決定します。</dd>" +
       "<dt>勤務地</dt><dd>大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F</dd>" +
-      "</dl><a class='btn fill sm' href='#entry' data-job='" + esc(j.title) + "'>この職種に応募する</a></div></details>";
+      "</dl><div class='jbtns'><a class='btn fill sm' href='#entry' data-job='" + esc(j.title) + "'>この職種に応募する</a> <a class='btn sm' href='jobs/" + j.id + ".html'>求人の詳細ページ</a></div></div></details>";
   }).join("");
 
   /* フォームの職種チップ・都道府県 */
@@ -73,6 +73,14 @@
       var r = $("input[name='区分'][value='応募']"); if (r) r.checked = true; syncKind();
     });
   });
+
+  /* 求人詳細ページから ?job=ID で来たら、その職種を選んだ状態にする */
+  var qj = (location.search.match(/[?&]job=([a-z]+)/) || [])[1];
+  if (qj) {
+    JOBS.forEach(function (j) {
+      if (j.id === qj) $$("#job-chips input").forEach(function (c) { if (c.value === j.title) c.checked = true; });
+    });
+  }
 
   /* 区分によって「経験・実績」の必須を切替 */
   function isApply() { var r = $("input[name='区分']:checked"); return !r || r.value === "応募"; }
