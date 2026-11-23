@@ -34,7 +34,7 @@ ORG = {
     "logo": "https://ysfree.co.jp/assets/img/logo.png",
 }
 HOURS = "9:30〜18:30の間（職種・雇用形態により異なります）"
-PAY = "ご経験・スキル・ご希望の働き方をふまえ、面接でご相談のうえ決定します。"
+PAY = "月給26万円〜（ご経験・能力により決定）。雇用形態はご希望の働き方をふまえ、面接でご相談のうえ決定します。"
 
 
 def load_jobs():
@@ -83,6 +83,8 @@ def posting(j):
         "url": f"{BASE}/recruit/jobs/{j['id']}.html",
         "directApply": True,
         "industry": "アパレルEC",
+        "baseSalary": {"@type": "MonetaryAmount", "currency": "JPY",
+                       "value": {"@type": "QuantitativeValue", "minValue": 260000, "unitText": "MONTH"}},
         "occupationalCategory": j["title"],
     }
     if j["tag"] == "未経験OK":

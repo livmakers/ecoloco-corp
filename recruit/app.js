@@ -54,7 +54,7 @@
       "<dt>仕事内容</dt><dd>" + li(j.work) + "</dd>" +
       "<dt>必須</dt><dd>" + li(j.must) + "</dd>" +
       "<dt>歓迎</dt><dd>" + li(j.want) + "</dd>" +
-      "<dt>雇用形態・給与</dt><dd>ご経験・スキル・ご希望の働き方をふまえ、面接でご相談のうえ決定します。</dd>" +
+      "<dt>雇用形態・給与</dt><dd>月給26万円〜（ご経験・能力により決定）。雇用形態はご希望の働き方をふまえ、面接でご相談のうえ決定します。</dd>" +
       "<dt>勤務地</dt><dd>大阪府大阪市中央区久太郎町3丁目5番5号 丸忠第一ビル5F</dd>" +
       "</dl><div class='jbtns'><a class='btn fill sm' href='#entry' data-job='" + esc(j.title) + "'>この職種に応募する</a> <a class='btn sm' href='jobs/" + j.id + ".html'>求人の詳細ページ</a></div></div></details>";
   }).join("");
