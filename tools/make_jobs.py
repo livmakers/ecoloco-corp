@@ -208,8 +208,9 @@ def main():
         crumbs = json.dumps({
             "@context": "https://schema.org", "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "ecoloco 採用サイト", "item": BASE + "/recruit/"},
-                {"@type": "ListItem", "position": 2, "name": j["title"], "item": url},
+                {"@type": "ListItem", "position": 1, "name": "ecoloco TOP", "item": BASE + "/"},
+                {"@type": "ListItem", "position": 2, "name": "採用サイト", "item": BASE + "/recruit/"},
+                {"@type": "ListItem", "position": 3, "name": j["title"], "item": url},
             ]}, ensure_ascii=False)
         others = "".join(
             f"<li><a href=\"{o['id']}.html\"><span class=\"en\">{e(o['en'])}</span>{e(o['title'])}<em class=\"{'ok' if o['tag']=='未経験OK' else ''}\">{e(o['tag'])}</em></a></li>"
@@ -230,9 +231,15 @@ def main():
     s = idx.read_text(encoding="utf-8")
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
     data = json.loads(m.group(1))
-    graph = [g for g in data["@graph"] if g.get("@type") not in ("JobPosting", "ItemList")]
+    graph = [g for g in data["@graph"] if g.get("@type") not in ("JobPosting", "ItemList", "BreadcrumbList")]
+    for g in graph:
+        if g.get("@type") == "Organization":
+            g["@id"] = BASE + "/#org"
     graph.insert(2, {"@type": "ItemList", "name": "募集職種",
                      "itemListElement": [{"@type": "ListItem", "position": k + 1, "url": u} for k, u in enumerate(urls)]})
+    graph.insert(3, {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "ecoloco TOP", "item": BASE + "/"},
+        {"@type": "ListItem", "position": 2, "name": "採用サイト", "item": BASE + "/recruit/"}]})
     data["@graph"] = graph
     new = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     s = s[:m.start(1)] + new + s[m.end(1):]
